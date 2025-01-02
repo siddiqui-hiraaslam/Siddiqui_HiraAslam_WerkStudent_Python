@@ -1,79 +1,37 @@
-
-# WerkStudent_Python
-
-## Overview
-
-This repository contains the interview task for the WerkStudent position in Python. The goal is to collect data from three sample invoices, create an Excel file with two sheets, and generate a CSV file. Additionally, an executable file should be provided to run the code.
-
-## Task Details
-
-1. **Data Extraction**:
-    - Extract specific values from three sample invoices.
-    - For Sample 1, extract the value shown in the provided image.
-    - <img width="289" alt="image" src="https://github.com/user-attachments/assets/0cf000ff-c305-4ffe-beb4-1c02a04d06b6" />
-    - For Samples 2, extract the value shown in the provided image.
-    - <img width="497" alt="image" src="https://github.com/user-attachments/assets/ea6eb368-604d-4dd4-9235-fbc8ec36d275" />
-
-2. **Excel File Creation**:
-    - Create an Excel file with two sheets:
-        - **Sheet 1**: Contains three columns - File Name, Date (scraped from the document), and Value.
-        - **Sheet 2**: Contains a pivot table with the date and value sum, and also by document name.
-
-3. **CSV File Creation**:
-    - Create a CSV file with all the data, including headers, and use a semicolon (;) as the separator.
-
-4. **Executable File**:
-    - Provide an executable file (.exe) that can run the code if the files are in the same folder.
-
-5. **Fork Creation**:
-    - Create a fork of this repository named `LastName_FirstName_WerkStudent_Python` (e.g., `Shovon_Golam_WerkStudent_Python`).
-    - Upload your code to this branch. No need to submit a pull request; the fork will be checked directly.
-
-6. **Documentation**:
-    - Include an explanation in the README file that a non-technical person can understand.
-    - Ensure the code is documented so that a technical person can understand it.
-
-7. **Problem Reporting**:
-    - If you face any problems or find it impossible to complete a task, document the issue in the README file of your branch. Explain what the problem was and why you were unable to complete it.
-
-
-## How It Works
-
-1. **Data Extraction**:
-    - The script reads the sample invoices and extracts the required values.
-    - The extracted data is stored in variables for further processing.
-
-2. **Excel File Creation**:
-    - The script creates an Excel file with two sheets.
-    - Sheet 1 contains the file name, extracted data, and value.
-    - Sheet 2 contains a pivot table summarizing the data by date and document name.
-
-3. **CSV File Creation**:
-    - The script generates a CSV file with the extracted data, including headers, and uses a semicolon as the separator.
-
-4. **Executable File**:
-    - An executable file is provided to run the entire code. Ensure the sample invoices are in the same folder as the executable file.
-
-5. **Requirements File**:
-    -A requirements.txt file is included to create the environment needed to run the code
-
-## Running the Code
-
-1. Place the sample invoices in the same folder as the executable file.
-2. Run the executable file to execute the code and generate the Excel and CSV files.
-
-
-## Documentation
-
-- The README file contains a non-technical explanation of the code.
-- The code is documented with comments to help technical users understand its functionality.
-
-## Problem Reporting
-
-- If you face any problems or find it impossible to complete a task, document the issue in the README file of your branch. Explain what the problem was and why you were unable to complete it.
-
-## Timeline
-
-- The time limit for this task is 9 January 2025. 
-
+README for WerkStudent Python Project - Siddiqui_Hira Aslam
+Overview
+This project automates the process of extracting data from invoices, compiling it into a structured Excel file, and generating a corresponding CSV file. The script specifically handles data extraction from PDF invoices, creation of an Excel file with detailed data and a pivot table, and a CSV file formatted with a semicolon as the separator. This repository supports the coding tasks required for a WerkStudent position in Python programming.
+System Requirements
+•	Python installed 
+How It Works
+Data Extraction
+The script reads PDF files containing sample invoices and extracts specific monetary values and dates.
+Excel and CSV File Creation
+After running the executable file "main.exe", the script generates the following files:
+•	Excel File: "invoices_with_pivot_table.xlsx"
+o	Sheet 1: Data - Lists the file names of the invoices, the dates extracted from each invoice, and the monetary values.
+o	Sheet 2: Pivot Table - Organizes and sums up the values by date and document name, providing a detailed overview of the financial data.
+•	CSV File: "invoices.csv"
+o	Contains all the extracted data formatted with semicolons (;) as separators to ensure compatibility with common spreadsheet applications.
+Installation and Running the Code
+Installation of Dependencies
+If you encounter library errors after running the "main.exe" file, please install the dependencies with the following command in the terminal:
+pip install -r requirements.txt
+Location of Invoices
+Ensure that all sample invoice PDFs are placed in the same folder as the executable file "main.exe".
+Execution
+Run the executable file "main.exe". This will execute the script, and you will see the generated Excel and CSV files in the same folder.
+Opening and Viewing Files
+To access and review the contents of the Excel and CSV files:
+1.	Excel File:
+o	Navigate to the location where the script outputted the file "invoices_with_pivot_table.xlsx".
+o	Open the file with Microsoft Excel or a compatible spreadsheet viewer.
+o	Check the two sheets: "Data" for the extracted values and "Pivot Table" for summarized data.
+2.	CSV File:
+o	Open Excel, go to the "Data" tab.
+o	Choose "Get Data" > "From Text/CSV."
+o	Select the "invoices.csv" file you generated and ensure that the delimiter is set to a semicolon (;).
+o	Load the data to see it formatted correctly.
+Important Note Regarding Invoice Files
+Task Requirements Discrepancy: The task requirements specify that data should be extracted from three invoices, but only two have been provided.  If the third invoice is missing, please contact me so I can update the code accordingly.
 
